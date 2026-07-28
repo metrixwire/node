@@ -1,0 +1,50 @@
+{
+  "name": "@metrixwire/node",
+  "version": "0.2.0",
+  "description": "Zero-config APM SDK for Node.js & Bun — auto-traces every request (Express, Fastify, Koa, NestJS, Hapi, Elysia) plus pg, mysql2, Prisma, ioredis, BullMQ & outbound HTTP.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup && tsc --emitDeclarationOnly --declaration --outDir dist",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": ["apm", "performance", "monitoring", "n+1", "express", "fastify", "koa", "nestjs", "elysia", "bun", "metrixwire"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metrixwire/node.git"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "tsup": "latest",
+    "typescript": "latest"
+  },
+  "peerDependencies": {
+    "pg": "*",
+    "mysql2": "*",
+    "@prisma/client": "*",
+    "ioredis": "*",
+    "bullmq": "*"
+  },
+  "peerDependenciesMeta": {
+    "pg": { "optional": true },
+    "mysql2": { "optional": true },
+    "@prisma/client": { "optional": true },
+    "ioredis": { "optional": true },
+    "bullmq": { "optional": true }
+  }
+}
