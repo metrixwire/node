@@ -1,6 +1,6 @@
 {
   "name": "@metrixwire/node",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Zero-config APM SDK for Node.js & Bun — auto-traces every request (Express, Fastify, Koa, NestJS, Hapi, Elysia) plus pg, mysql2, Prisma, ioredis, BullMQ & outbound HTTP.",
   "type": "module",
   "main": "./dist/index.cjs",
