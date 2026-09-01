@@ -76,7 +76,7 @@ const prisma = instrumentPrisma(new PrismaClient())
 ```ts
 MetrixWire.init({
   apiKey: 'mw_...',                        // required
-  endpoint: 'http://localhost:3000/ingest', // default
+  endpoint: 'https://metrixwire.com/ingest', // default
   flushIntervalMs: 5000,                    // how often batches are sent
   enabled: true,                            // set to false to disable entirely
   timeoutMs: 3000,                          // send timeout (short, non-blocking)

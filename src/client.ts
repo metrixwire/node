@@ -3,7 +3,7 @@ import { Transport } from './transport'
 import { installAll } from './adapters/registry'
 
 const DEFAULTS = {
-  endpoint: 'http://localhost:3000/ingest',
+  endpoint: 'https://metrixwire.com/ingest',
   flushIntervalMs: 5000,
   enabled: true,
   timeoutMs: 3000,

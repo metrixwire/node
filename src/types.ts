@@ -29,7 +29,7 @@ export interface TraceData {
 
 export interface MetrixWireConfig {
   apiKey: string
-  /** Full ingest URL. Default: http://localhost:3000/ingest */
+  /** Full ingest URL. Default: https://metrixwire.com/ingest */
   endpoint: string
   /** How often the transport flushes queued traces. Default: 5000ms */
   flushIntervalMs: number
